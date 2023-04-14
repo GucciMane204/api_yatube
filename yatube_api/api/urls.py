@@ -19,8 +19,5 @@ urlpatterns = [
         views.obtain_auth_token,
         name='obtain_auth_token',
     ),
-    # роутер обслуживает зарегистрированные пути 'posts', 'posts/<int:pk>',
-    # 'groups', 'groups/<int:pk>', а также r-строки с комментариями к постам
-    # в том числе с id этих постов
     path('api/v1/', include(router.urls)),
 ]
